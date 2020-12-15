@@ -67,7 +67,6 @@ public class LoginVotanteController implements Initializable {
                 } catch (IOException e) {
                     e.printStackTrace();
                 }
-
                 generarLocalidad();
             }
         }
@@ -106,8 +105,8 @@ public class LoginVotanteController implements Initializable {
         }
     }
 
-    //funcion para generar la ventana de registro de candidatos
-    public void generarRegistro(){
+    //funcion para generar la ventana de login Administrador
+    public void loginAdmin(){
         try {
             Parent root = FXMLLoader.load(getClass().getResource("LoginAdministrador.fxml"));
             Stage regiStage = new Stage();

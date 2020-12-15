@@ -63,7 +63,7 @@
             <Font size="14.0" />
          </font>
       </Label>
-      <Button layoutX="400.0" layoutY="638.0" mnemonicParsing="false" onAction="#Agregar" prefHeight="35.0" prefWidth="99.0" style="-fx-background-color: #003d66;" text="Guardar" textFill="WHITE">
+      <Button layoutX="474.0" layoutY="638.0" mnemonicParsing="false" onAction="#Agregar" prefHeight="35.0" prefWidth="99.0" style="-fx-background-color: #003d66;" text="Guardar" textFill="WHITE">
          <effect>
             <InnerShadow />
          </effect>
@@ -81,5 +81,13 @@
       </Label>
       <TextField fx:id="identidad" layoutX="327.0" layoutY="207.0" prefHeight="25.0" prefWidth="444.0" />
       <DatePicker fx:id="Fecha" layoutX="329.0" layoutY="363.0" />
+      <Button layoutX="322.0" layoutY="638.0" mnemonicParsing="false" onAction="#mostrarMenuAdmin" prefHeight="35.0" prefWidth="99.0" style="-fx-background-color: #003d66;" text="Regresar" textFill="WHITE">
+         <effect>
+            <InnerShadow />
+         </effect>
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font>
+      </Button>
    </children>
 </AnchorPane>

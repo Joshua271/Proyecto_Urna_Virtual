@@ -3,8 +3,12 @@ package sample;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.*;
+import javafx.stage.Stage;
 
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -168,6 +172,20 @@ public class RegistroController implements Initializable {
             arreglosMunicipios();
             ObservableList<String> list= FXCollections.observableArrayList(mun);
             Municipio.setItems(list);
+        }
+    }
+
+    //Esta funcion es para regresar al menu de opciones del administrador
+    public void mostrarMenuAdmin(){
+        try {
+            Parent root = FXMLLoader.load(getClass().getResource("MenuAdmin.fxml"));
+            Stage regiStage = new Stage();
+            regiStage.setTitle("Administrador");
+            regiStage.setScene(new Scene(root));
+            regiStage.show();
+        } catch (Exception e){
+            e.printStackTrace();
+            e.getCause();
         }
     }
 }

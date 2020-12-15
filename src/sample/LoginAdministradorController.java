@@ -50,7 +50,8 @@ public class LoginAdministradorController {
             mensaje.setHeaderText("Acceso Concedido");
             mensaje.setContentText(" Bienvenido "+ user.getText());
             mensaje.showAndWait();
-            generarRegistro();
+            //aqui ira hacia el menu administrador
+            mostrarMenuAdmin();
         }
     }
 
@@ -64,7 +65,6 @@ public class LoginAdministradorController {
             while(entrada.hasNextLine()){
                 String informacion=entrada.nextLine();
                 String d[]=informacion.split(" ");
-                //System.out.println(informacion);
                 if (nom.equals(d[0])&& pass.equals(d[1])){
                     r=true;
                 }
@@ -96,11 +96,11 @@ public class LoginAdministradorController {
             }
         }
 
-        public void generarRegistro(){
+        public void mostrarMenuAdmin(){
             try {
-                Parent root = FXMLLoader.load(getClass().getResource("registro.fxml"));
+                Parent root = FXMLLoader.load(getClass().getResource("MenuAdmin.fxml"));
                 Stage regiStage = new Stage();
-                regiStage.setTitle("Opciones del administrador");
+                regiStage.setTitle("Administrador");
                 regiStage.setScene(new Scene(root));
                 regiStage.show();
             } catch (Exception e){
