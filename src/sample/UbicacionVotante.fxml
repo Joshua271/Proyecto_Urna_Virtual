@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
-<?import javafx.scene.text.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="506.0" prefWidth="698.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.UbicacionVotanteController">
+<AnchorPane prefHeight="506.0" prefWidth="698.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.UbicacionVotanteController">
    <children>
       <Button layoutX="300.0" layoutY="399.0" mnemonicParsing="false" onAction="#accion4" prefHeight="39.0" prefWidth="98.0" style="-fx-background-color: #003d66;" text="Aceptar" textFill="WHITE" wrapText="true">
          <font>
@@ -21,8 +23,8 @@
             <Font name="Arial Bold" size="22.0" />
          </font>
       </Label>
-      <ComboBox layoutX="280.0" layoutY="227.0" prefHeight="26.0" prefWidth="278.0" />
-      <ComboBox layoutX="280.0" layoutY="293.0" prefHeight="26.0" prefWidth="278.0" />
+      <ComboBox fx:id="Departamento" layoutX="280.0" layoutY="227.0" prefHeight="26.0" prefWidth="278.0" />
+      <ComboBox fx:id="Municipio" layoutX="280.0" layoutY="293.0" prefHeight="26.0" prefWidth="278.0" />
       <AnchorPane prefHeight="123.0" prefWidth="698.0" style="-fx-background-color: #003d66;">
          <children>
             <Label alignment="CENTER" layoutX="128.0" layoutY="36.0" prefHeight="51.0" prefWidth="445.0" text="Seleccion de localidad del votante" textFill="WHITE">
