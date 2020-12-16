@@ -21,5 +21,4 @@ public class CandidatosDiputadosController {
             e.getCause();
         }
     }
-
 }
