@@ -52,9 +52,6 @@ public class RegistroController implements Initializable {
         PartidoPolitico.setItems(list2);
         MostrarDepartamentos();
 
-
-
-
         revision();
     }
 
@@ -175,13 +172,5 @@ public class RegistroController implements Initializable {
             ObservableList<String> list3= FXCollections.observableArrayList(mun);
             Municipio.setItems(list3);
         }
-
-
-
     }
-
-
-
-
-
 }
