@@ -71,7 +71,7 @@
             <Font name="Arial Bold" size="14.0" />
          </font></Button>
       <ComboBox fx:id="TipoCandidatura" layoutX="327.0" layoutY="414.0" prefHeight="26.0" prefWidth="444.0" promptText="Seleccione el tipo de candidatura" />
-      <ComboBox fx:id="Municipio" layoutX="327.0" layoutY="572.0" prefHeight="26.0" prefWidth="444.0" promptText="Seleccione el municipio" />
+      <ComboBox fx:id="Municipio" disable="true" layoutX="327.0" layoutY="572.0" prefHeight="26.0" prefWidth="444.0" promptText="Seleccione el municipio" />
       <ComboBox fx:id="Departamento" layoutX="327.0" layoutY="519.0" onAction="#MostrarDepartamentos" prefHeight="26.0" prefWidth="444.0" promptText="Seleccione el departamento" />
       <ComboBox fx:id="PartidoPolitico" layoutX="327.0" layoutY="462.0" prefHeight="26.0" prefWidth="444.0" promptText="Seleccione un partido politico" />
       <Label layoutX="44.0" layoutY="201.0" prefHeight="38.0" prefWidth="208.0" text="Identidad">
@@ -81,7 +81,7 @@
       </Label>
       <TextField fx:id="identidad" layoutX="327.0" layoutY="207.0" prefHeight="25.0" prefWidth="444.0" />
       <DatePicker fx:id="Fecha" layoutX="329.0" layoutY="363.0" />
-      <Button layoutX="322.0" layoutY="638.0" mnemonicParsing="false" onAction="#mostrarMenuAdmin" prefHeight="35.0" prefWidth="99.0" style="-fx-background-color: #003d66;" text="Regresar" textFill="WHITE">
+      <Button layoutX="322.0" layoutY="638.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="99.0" style="-fx-background-color: #003d66;" text="Regresar" textFill="WHITE">
          <effect>
             <InnerShadow />
          </effect>
